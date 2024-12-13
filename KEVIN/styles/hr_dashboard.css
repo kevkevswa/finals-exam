@@ -1,0 +1,101 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Consistent font choice */
+}
+
+body {
+    background: linear-gradient(135deg, #073c7e, #d83215); /* Warmer gradient colors for vibrancy */
+    color: #444; /* Darker text for improved readability */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 16px;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8); /* Darker header for better contrast */
+    width: 100%;
+    padding: 20px; /* Increased padding for a more spacious feel */
+    text-align: center;
+    border-bottom: 2px solid #d83215; /* Updated border color for consistency */
+}
+
+header h1 {
+    font-size: 2.5rem; /* Larger font size for emphasis */
+    color: #fff; /* White text for contrast */
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.8); /* Darker background for nav */
+    width: 100%;
+    padding: 15px 0; /* Increased padding for better spacing */
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Increased gap for better spacing */
+}
+
+nav a {
+    color: #ffe761; /* Updated link color to match new scheme */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out; 
+}
+
+nav a:hover {
+    color: #d9534f; /* Updated hover color for links */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.95); /* More opaque for better readability */
+    border-radius: 25px; /* Softer rounded edges */
+    padding: 40px; /* Increased padding for comfort */
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem; /* Consistent heading size and larger for emphasis */
+    margin-bottom: 25px; 
+    color: #aa2929; /* Darker text for better contrast */
+}
+
+ul {
+    list-style-type: none; /* Removed default list styling */
+    padding: 0; 
+    margin: 15px 0; 
+}
+
+ul li {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly more opaque background for list items */
+    padding: 12px; 
+    border-radius: 10px; /* Softer rounded corners */
+    color: #1b1010; 
+    margin-bottom: 10px; 
+}
+
+ul li strong {
+    color: #1b1010; /* Lightened strong text for contrast */
+}
+
+.logout-link {
+    display: inline-block; 
+    background: linear-gradient(135deg, #d9534f, #ffe761); /* Updated gradient colors */
+    color: #fff; /* Changed text color to white for better readability */
+    padding: 14px 24px; /* Increased padding for comfort and clickability */
+    border-radius: 10px; /* Softer rounded edges */
+    text-decoration: none; 
+    margin-top: 25px; /* Increased top margin for spacing from other elements */
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; 
+}
+
+.logout-link:hover {
+   transform: scale(1.05); /* Slightly enlarges link on hover for effect */
+   background: linear-gradient(135deg, #ffe761, #d9534f); /* Reversed gradient on hover */
+}

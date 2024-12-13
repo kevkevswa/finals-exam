@@ -1,0 +1,133 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif; /* Consistent font choice */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Light background for contrast */
+    color: #444; /* Darker text for improved readability */
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker semi-transparent background */
+    color: #fff;
+    padding: 20px 25px; /* Increased padding for comfort */
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8rem; /* Larger font size for emphasis */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0; /* Added margin for spacing */
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px; /* Increased margin for better spacing */
+}
+
+nav ul li a {
+    color: #d83215; /* Updated link color to match new scheme */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover for better interaction feedback */
+}
+
+main {
+    padding: 25px; /* Increased padding for comfort */
+    max-width: 900px; /* Increased max width for main content */
+    margin: auto; /* Center main content */
+}
+
+main h2 {
+    color: #d9534f; /* Updated heading color to match new scheme */
+    font-size: 2rem; /* Increased heading size for emphasis */
+    margin-bottom: 25px; /* Increased bottom margin for spacing */
+}
+
+main section {
+    margin-bottom: 25px; /* Increased bottom margin for spacing between sections */
+    background: rgba(255, 255, 255, 0.95); /* More opaque background for sections */
+    padding: 20px; /* Increased padding for comfort */
+    border-radius: 10px; /* Softer rounded edges */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+}
+
+main section h3 {
+    margin-top: 0;
+    font-size: 1.6rem; /* Slightly larger subheading size */
+}
+
+main section ul {
+    list-style-type: none; /* Removed default list styling */
+    padding: 0; 
+}
+
+main section ul li {
+    margin-bottom: 12px; /* Increased bottom margin for spacing between list items */
+    padding: 12px; /* Increased padding for comfort */
+    background-color: rgba(255, 255, 255, 0.85); /* Slightly opaque background for list items */
+    border-radius: 6px; 
+    border: 1px solid #ddd; /* Light border for definition */
+}
+
+form {
+    display: inline-block;
+    margin-top: 15px; /* Added top margin for spacing */
+}
+
+form textarea {
+    width: calc(100% - 20px); /* Adjusted width calculation to account for padding and borders */
+    margin-top: 15px;
+    padding: 14px; /* Increased padding for comfort */
+    border-radius: 6px; 
+    border: none; 
+    background-color: rgba(255,255,255,0.6); /* Updated background color for input fields */
+}
+
+form input[type="file"] {
+   margin-top : 15px; 
+}
+
+form button {
+   display : inline-block; 
+   background-color : #d9534f; /* Updated button color to match new scheme */ 
+   color : #fff; 
+   border : none; 
+   padding : 14px 22px; /* Increased padding for comfort */ 
+   border-radius : 6px; 
+   cursor : pointer; 
+   font-size : 1rem; 
+   margin-top : 15px; 
+   transition : background-color .3s ease-in-out, transform .3s ease-in-out; 
+}
+
+form button:hover {
+   background-color : #c94a3b; /* Darker shade on hover */ 
+   transform: scale(1.05); /* Slightly enlarges button on hover for effect */
+}
+
+footer {
+   text-align : center; 
+   padding : 20px; /* Increased padding for comfort */ 
+   background-color : #333; 
+   color : #fff; 
+   position : relative; 
+   bottom : 0; 
+   width : 100%; 
+}
+
+footer p {
+   margin : 0; 
+   font-size : .95rem; 
+}

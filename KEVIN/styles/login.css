@@ -1,0 +1,96 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Consistent font choice */
+}
+
+body {
+    background: linear-gradient(135deg, #073c7e, #d83215); /* Vibrant gradient background */
+    color: #333; /* Darker text for improved readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 15px; /* Softer rounded edges */
+    padding: 25px 35px; /* Comfortable padding */
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Maximum width for larger screens */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Enhanced shadow for depth */
+    text-align: center; /* Centered text alignment */
+}
+
+.login-container h1 {
+    font-size: 2.2rem; /* Larger font size for emphasis */
+    margin-bottom: 25px; /* Space below the heading */
+}
+
+.error-message {
+    background-color: rgba(255, 0, 0, 0.3); /* Light red background for error messages */
+    color: #d83215; /* Updated to match the new color scheme */
+    padding: 12px; /* Comfortable padding */
+    margin-bottom: 20px; /* Space below the error message */
+    border-radius: 5px; /* Softer rounded edges */
+    font-size: 1rem; /* Slightly larger for better readability */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Vertical layout for form elements */
+    gap: 20px; /* Increased gap for better spacing between elements */
+}
+
+label {
+    text-align: left; /* Left-aligned labels for clarity */
+    font-size: 1rem; /* Increased font size for clarity */
+    font-weight: bold; /* Bold labels for emphasis */
+    color: #555; /* Darker color for better contrast against the background */
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 12px; /* Increased padding for comfort */
+    border: none; /* No border for a cleaner look */
+    border-radius: 5px; /* Softer rounded edges */
+    outline: none; /* Remove default outline on focus */
+    font-size: 1rem; /* Consistent font size for inputs */
+    background-color: rgba(255, 255, 255, 0.3); /* Lightly opaque input fields */
+    color: #333; /* Darker text for better readability */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition on focus effect */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    background-color: rgba(255, 255, 255, 0.5); /* Lighter background on focus for visibility */
+}
+
+button {
+    background: linear-gradient(135deg, #ffe761, #d9534f); /* Gradient button colors */
+    border: none; /* No border for a cleaner look */
+    color: #fff; /* White text for contrast against button background */
+    font-size: 1rem; 
+    padding: 12px; /* Increased padding for better clickability */ 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease-in-out; /* Transition effect on hover */
+}
+
+button:hover {
+   background: linear-gradient(135deg, #d9534f, #ffe761); /* Reversed gradient on hover for effect */
+}
+
+a {
+   color: #ffe761; /* Updated link color to match new scheme */ 
+   text-decoration: none; 
+   font-weight: bold;
+   transition: color 0.3s ease-in-out; 
+}
+
+a:hover {
+   color: #d9534f; /* Updated hover color for links to maintain consistency with the theme */ 
+}

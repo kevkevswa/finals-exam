@@ -1,0 +1,86 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Consistent font choice */
+}
+
+body {
+    background: linear-gradient(135deg, #073c7e, #d83215); /* Vibrant gradient background */
+    color: #444; /* Darker text for improved readability */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    font-size: 16px; /* Base font size */
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.2); /* More opaque semi-transparent background */
+    border-radius: 8px; 
+    padding: 15px 25px; 
+    display: flex; 
+    justify-content: space-between; 
+    width: 90%; 
+    max-width: 600px; 
+    margin-bottom: 20px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+}
+
+.navbar a {
+    color: #d83215; /* Updated link color to match new scheme */
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: color 0.3s ease-in-out; 
+    margin-right: 20px; /* Increased spacing between links */
+}
+
+.navbar a:hover {
+    color: #d9534f; /* Updated hover color for links */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.95); /* More opaque for better readability */
+    border-radius: 20px; /* Softer rounded edges */
+    padding: 35px; 
+    width: 90%; 
+    max-width: 600px; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow for depth */
+    text-align: center; 
+}
+
+.container h1 {
+    font-size: 2.5rem; /* Slightly larger font size for emphasis */
+    margin-bottom: 25px; 
+}
+
+.applications-list {
+    list-style-type: none; /* Removed default list styling */
+    padding: 0; 
+}
+
+.application-item {
+    background-color: rgba(255, 255, 255, 0.25); /* More opaque for contrast */
+    border-radius: 10px; /* Softer rounded edges */
+    padding: 20px; 
+    margin-bottom: 20px; /* Increased bottom margin for spacing between items */
+}
+
+.application-item h3 {
+    font-size: 1.6rem; /* Slightly larger heading size for emphasis */
+    color: #1b1010; /* Darker text for contrast */
+    margin-bottom: 12px; 
+}
+
+.application-item p {
+    font-size: 1rem; 
+    color: #1b1010; /* Darker text for better readability */
+}
+
+.no-applications {
+   font-size : 1.2rem; /* Increased font size for visibility */ 
+   color : #1b1010;
+   text-align: center; /* Center the message if needed */
+}

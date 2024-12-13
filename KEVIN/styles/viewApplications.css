@@ -1,0 +1,131 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Consistent font choice */
+}
+
+body {
+    background: linear-gradient(135deg, #073c7e, #d83215); /* Vibrant gradient background */
+    color: #444; /* Darker text for improved readability */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    font-size: 16px; /* Base font size */
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background for contrast */
+    width: 100%; /* Full width header */
+    padding: 20px; /* Increased padding for comfort */
+    text-align: center; /* Centered text alignment */
+    border-bottom: 2px solid #d83215; /* Updated border color for emphasis */
+}
+
+header h1 {
+    font-size: 2rem; /* Increased font size for emphasis */
+    color: #fff; /* White text for contrast */
+}
+
+nav {
+    display: flex; /* Flexbox layout for navigation links */
+    justify-content: space-around; /* Space out navigation links evenly */
+    margin-top: 10px; /* Space above navigation */
+}
+
+nav a {
+    color: #ffe761; /* Updated link color to match new scheme */
+    text-decoration: none; /* No underline on links */
+    font-weight: bold; /* Bold links for emphasis */
+    transition: color 0.3s ease-in-out; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+    color: #d9534f; /* Updated hover color for links */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.95); /* More opaque for better readability */
+    border-radius: 20px; /* Softer rounded edges */
+    padding: 30px; 
+    width: 90%; 
+    max-width: 800px; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+    text-align: center; 
+}
+
+table {
+    width: 100%; /* Full width table within the container */
+    border-collapse: collapse; /* Remove gaps between table cells */
+    margin-top: 20px; 
+}
+
+th, td {
+    padding: 14px; /* Increased padding for comfort in table cells */
+    border: 1px solid #1b1010; 
+    color: #ddd; /* Light gray text for better readability in table cells */
+}
+
+th {
+    background-color: rgba(0, 0, 0, 0.6); /* Darker header background for contrast */
+    color: #fff; 
+    text-align: center; 
+}
+
+tr:nth-child(even) {
+   background-color : rgba(255,255,255,0.15); /* Slightly darker background for even rows */ 
+}
+
+tr:hover {
+   background-color : rgba(255,255,255,0.25); /* Highlight on hover for better interaction feedback */ 
+}
+
+.resume-link {
+   color : #ffe761; /* Updated link color to match new scheme */ 
+   text-decoration : none; 
+   font-weight : bold; 
+}
+
+.resume-link:hover {
+   color : #d9534f; /* Updated hover color for resume links */ 
+}
+
+form {
+   display : flex; 
+   justify-content : center; 
+   gap : 15px; /* Increased gap for better spacing between form elements */
+}
+
+button {
+   background : linear-gradient(135deg, #d9534f, #ffe761); /* Updated gradient colors */ 
+   border : none; 
+   color : #fff; 
+   font-size : 1rem; 
+   padding : 12px 20px; /* Increased padding for better clickability */ 
+   border-radius : 8px; /* Softer rounded edges */ 
+   cursor : pointer; 
+   transition : background .3s ease-in-out, transform .3s ease-in-out; 
+}
+
+button:hover {
+   background : linear-gradient(135deg, #ffe761, #d9534f); /* Reversed gradient on hover */ 
+   transform: scale(1.05); /* Slightly enlarges button on hover for effect */
+}
+
+.back-link {
+   margin-top : 15px; 
+}
+
+.back-link a {
+   color : #ffe761; /* Updated link color to match new scheme */ 
+   text-decoration : none; 
+   font-weight : bold; 
+   transition : color .3s ease-in-out; 
+}
+
+.back-link a:hover {
+   color : #d9534f; /* Updated hover color for back links */ 
+}

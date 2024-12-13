@@ -1,0 +1,103 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Consistent font choice */
+}
+
+body {
+    background: linear-gradient(135deg, #073c7e, #d83215); /* Warmer gradient colors for a vibrant look */
+    color: #444; /* Darker text for improved readability */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 16px;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8); /* Darker background for better contrast */
+    width: 100%;
+    padding: 20px; /* Increased padding for a more spacious feel */
+    text-align: center;
+    border-bottom: 2px solid #d83215; /* Updated border color for consistency */
+}
+
+header h1 {
+    font-size: 2.5rem; /* Larger font size for emphasis */
+    color: #fff; /* White text for contrast */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.95); /* More opaque for better readability */
+    border-radius: 25px; /* Softer rounded edges */
+    padding: 40px; /* Increased padding for comfort */
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+    text-align: center;
+    margin-top: 30px; /* Increased top margin for spacing from header */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adjusted gap for better spacing */
+}
+
+label {
+    text-align: left;
+    font-size: 1.2rem; /* Increased font size for clarity */
+    font-weight: bold;
+    color: #555; /* Darker color for better contrast */
+}
+
+input[type="text"],
+textarea {
+    padding: 16px; /* Increased padding for comfort */
+    border: none;
+    border-radius: 10px; /* More rounded edges */
+    outline: none;
+    font-size: 1.1rem; /* Slightly larger for readability */
+    background-color: rgba(255, 255, 255, 0.5); /* More opacity for input fields */
+    color: #333; /* Darker text for better readability */
+    transition: background-color 0.3s ease-in-out; 
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    background-color: rgba(255, 255, 255, 0.7); /* More noticeable focus effect */
+}
+
+button {
+    background: linear-gradient(135deg, #d9534f, #ffe761); /* Updated gradient colors */
+    border: none;
+    color: #fff;
+    font-size: 1.1rem; 
+    padding: 14px 24px; /* Increased padding for better clickability */
+    border-radius: 10px; 
+    cursor: pointer; 
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; 
+}
+
+button:hover {
+   transform: scale(1.05); /* Slightly enlarges button on hover for effect */
+   background: linear-gradient(135deg, #ffe761, #d9534f); /* Reversed gradient on hover */
+}
+
+.back-link {
+   margin-top : 20px; /* Increased margin for spacing from other elements */
+}
+
+.back-link a {
+   color : #ffe761; /* Updated link color to match new scheme */
+   text-decoration : none; 
+   font-weight : bold; 
+   transition : color 0.3s ease-in-out; 
+}
+
+.back-link a:hover {
+   color : #d9534f; /* Updated hover color for links to maintain consistency */
+}

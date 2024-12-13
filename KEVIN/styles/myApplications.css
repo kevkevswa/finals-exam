@@ -1,0 +1,133 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Consistent font choice */
+}
+
+body {
+    background: linear-gradient(135deg, #073c7e, #d83215); /* Vibrant gradient background */
+    color: #444; /* Darker text for improved readability */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    font-size: 16px; /* Base font size */
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background for contrast */
+    width: 100%; /* Full width header */
+    padding: 20px; /* Increased padding for comfort */
+    text-align: center; /* Centered text alignment */
+    border-bottom: 2px solid #d83215; /* Updated border color for emphasis */
+}
+
+header h1 {
+    font-size: 2rem; /* Increased font size for emphasis */
+    color: #fff; /* White text for contrast */
+}
+
+nav {
+    display: flex; /* Flexbox layout for navigation links */
+    justify-content: space-around; /* Space out navigation links evenly */
+    margin-top: 10px; /* Space above navigation */
+}
+
+nav a {
+    color: #ffe761; /* Updated link color to match new scheme */
+    text-decoration: none; /* No underline on links */
+    font-weight: bold; /* Bold links for emphasis */
+    transition: color 0.3s ease-in-out; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+    color: #d9534f; /* Updated hover color for links */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.95); /* More opaque for better readability */
+    border-radius: 20px; /* Softer rounded edges */
+    padding: 30px; /* Comfortable padding inside container */
+    width: 90%; /* Responsive width */
+    max-width: 800px; /* Maximum width for larger screens */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+    text-align: center; /* Centered text alignment in container */
+    margin-top: 20px; /* Space above the container */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Increased bottom margin for better spacing between form groups */
+}
+
+label {
+    display: block; /* Block display for labels to stack vertically with inputs */
+    margin-bottom: 8px; /* Increased margin for clarity and spacing from input fields */
+    color: #1b1010; /* Darker label text for contrast against the background */
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%; /* Full width inputs and selects within their parent container */
+    padding: 14px; /* Increased padding for comfort in input fields */
+    border-radius: 8px; /* Softer rounded edges for inputs and selects */ 
+    margin-top: 5px; 
+    background-color: rgba(255,255,255,0.4); /* More opaque background for inputs */ 
+    border: none; /* No border for a cleaner look */ 
+    color: #333; /* Darker text for better readability */ 
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:hover {
+   background-color : rgba(255,255,255,0.6); /* Lighter on focus or hover */ 
+}
+
+button {
+   background : linear-gradient(135deg, #d9534f, #ffe761); /* Updated gradient colors */ 
+   border : none; 
+   color : #fff; 
+   font-size : 1rem; 
+   padding : 14px 24px; /* Increased padding for comfort */ 
+   border-radius : 8px; 
+   cursor : pointer; 
+   transition : background .3s ease-in-out, transform .3s ease-in-out; 
+}
+
+button:hover {
+   background : linear-gradient(135deg, #ffe761, #d9534f); /* Reversed gradient on hover */ 
+   transform: scale(1.05); /* Slightly enlarges button on hover for effect */
+}
+
+.message-list {
+   margin-top : 20px; 
+   width: 100%; /* Ensures the message list takes full width of the container */
+}
+
+.message-item {
+   background-color : rgba(255, 255, 255, 0.15); 
+   border-radius : 10px; 
+   padding : 15px; 
+   margin-bottom : 15px; /* Increased bottom margin for spacing between messages */
+   box-shadow : 0 2px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.message-item p {
+   color : #1b1010; 
+}
+
+.message-item form {
+   display : flex;
+   flex-direction : column;
+}
+
+.message-item textarea {
+   margin-top : 5px;
+   border-radius : 8px; /* Softer rounded edges */ 
+   padding : 12px; /* Increased padding for comfort */ 
+   background-color : rgba(255,255,255,0.4); /* More opaque background */ 
+   color : #333; /* Darker text for better readability */ 
+}
